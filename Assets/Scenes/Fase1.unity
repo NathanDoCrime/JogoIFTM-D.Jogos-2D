@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420030}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -313,6 +314,22 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
+--- !u!114 &519420030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4d9317f1d84bb54c960fa4dae949405, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DampTime: 0
+  m_Target: {fileID: 0}
+  m_XOffset: 0
+  m_YOffset: 0
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -746,6 +763,7 @@ GameObject:
   - component: {fileID: 987354695}
   - component: {fileID: 987354694}
   - component: {fileID: 987354693}
+  - component: {fileID: 987354697}
   m_Layer: 0
   m_Name: Personagem1
   m_TagString: Player
@@ -849,10 +867,10 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 0.4
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -992,10 +1010,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48684e976de395c4391cec9743256608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
-  jumpForce: 7
-  isGrounded: 1
-  jumpSound: {fileID: 987354691}
 --- !u!82 &987354693
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1302,6 +1316,22 @@ MonoBehaviour:
   ItensSound: {fileID: 987354694}
   lifeSound: {fileID: 987354695}
   faseSound: {fileID: 987354693}
+--- !u!114 &987354697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 987354685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66b8250666a97bd4ab322130be3549f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 6
+  jumpForce: 7
+  isGrounded: 1
+  jumpSound: {fileID: 987354691}
 --- !u!1 &1055224357
 GameObject:
   m_ObjectHideFlags: 0
